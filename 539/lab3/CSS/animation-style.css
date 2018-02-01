@@ -1,0 +1,41 @@
+div{
+  height: 40px;
+  width: 40px;
+  background: red;
+  margin-top: 40px;
+  margin-left: 40px;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+
+}
+
+@keyframes example {
+  0% {
+    margin-left: 40px;
+    background: red;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  33%{
+    margin-left: 140px;
+    background: green;
+    clip-path: polygon(50% 0%, 0 84%, 100% 84%);
+/*   https://bennettfeely.com/clippy/   */
+    transform: rotate(90deg);
+  }
+  66%{
+    margin-left: 340px;
+    background: blue;
+    boarder-radius: 0px;
+    transform: rotate(180deg);
+  }
+  100%{
+    margin-left: 340px;
+    background: pink;
+    transform: rotate(270deg);
+    clip-path: circle(50% at 50% 50%);
+
+  }
+}

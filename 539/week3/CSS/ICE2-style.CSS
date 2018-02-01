@@ -1,0 +1,22 @@
+#content
+{background-color: gray;}
+header h1 {
+  text-align: right;
+  background-color: yellow;
+}
+nav {
+  background-color: green;
+  text-align: center;
+}
+nav li {
+  display: inline;
+  width: 200px
+  height: 75px
+}
+nav a {
+  color: white;
+  background-color: black;
+}
+footer {
+  background-color: green;
+}
