@@ -1,0 +1,94 @@
+@media only screen and (min-width: 650px){
+  .top-nav{
+    text-align: center;
+  }
+
+  .top-nav ul li{
+    display: inline-block;
+  }
+
+  .top-nav ul{
+    display: inline-block;
+  }
+
+  .top-nav ul li a {
+    line-height: 46px;
+    text-align: center;
+
+  }
+
+  /*images*/
+
+  .photo-grid{
+    display: grid;
+    grid-template-columns: auto auto;  /*for each column(2) width is auto*/
+  }
+
+  .photo-cell{
+    /*grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: span 2;
+
+  }
+
+  .photo-cell:nth-child(3), .photo-cell:nth-child(4){
+    grid-column: span 1;
+  }
+
+  /*body{
+    background-color: green;
+  }*/
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+  /*body{
+    background-color: red;
+  }*/
+  .top-nav{
+    position: relative;
+    background-color: black;
+  }
+
+  header {
+    min-height: 65px;
+  }
+
+  div.logo{
+    position: absolute;
+    left:0;
+    z-index: 1;  /*brings logo to top*/
+  }
+
+  .top-nav ul{
+    position: absolute;
+    right:0;
+  }
+
+  .top-nav ul li{
+    display: inline-block;
+    right: 0;
+  }
+
+/*images*/
+
+  .photo-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto; /*or could say 1fr 1fr 1fr 1fr -- then could later change from fraction amnts*/
+  }
+
+  .photo-cell{
+    grid-column: span 2;
+  }
+
+  /*.photo-cell:nth-child(1), .photo-cell:nth-child(2), .photo-cell:nth-child(5), .photo-cell:nth-child(6), .photo-cell:nth-child(7){
+    grid-column: span 2;
+  }*/
+
+  .photo-cell:nth-child(3), .photo-cell:nth-child(4){
+    *grid-column: span 1;
+  }
+
+}
