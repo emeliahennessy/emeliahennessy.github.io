@@ -12,7 +12,14 @@
 
     <script type="text/javascript">
     function checkForm(){
+			alert(document.getElementById("fullname").value.length)
+			var a = document.getElementById("fullname").value.length;
+			var b = document.getElementById("streetaddr").value.length;
     	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+			if a = 0
+				display: "nameerrormsg";
+			if b = 0;
+				display: "addrerrormsg";
     }
     </script>
 </head>
