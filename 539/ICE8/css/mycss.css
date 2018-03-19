@@ -1,0 +1,20 @@
+.thumbnail{
+	padding:20px;
+	margin:20px;
+	width:25%;
+}
+
+body {
+	background: #ffffff;
+	color: #111111;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 20px;
+	margin: 20px;
+}
+
+fieldset {
+	background: #ADD8E6;
+	border-color: #000080;
+	border-style: solid;
+	border-width: 3%;
+}
