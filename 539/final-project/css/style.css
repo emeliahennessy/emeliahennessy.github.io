@@ -1,6 +1,96 @@
 .card-img-top{
 height: 225px;
-width: 100%; 
+width: 100%;
 display: block;
+
+}
+
+.painting-pics{
+  height: 225px;
+  width: 25%;
+  display: block;
+}
+
+textarea {
+  width: 50%;
+  height: 20vh;
+}
+
+.photo-cell img{
+  width: 100%;
+}
+
+
+
+
+
+@media only screen and (min-width: 650px){
+
+  /*images*/
+
+  .photo-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /*for each column(2) width is auto*/
+  }
+
+  .photo-cell{
+    /*grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: span 2;
+
+  }
+
+  .photo-cell:nth-child(1), .photo-cell:nth-child(2){
+    grid-column: span 1;
+  }
+
+  .photo-cell:nth-child(4), .photo-cell:nth-child(5){
+    grid-column: span 1;
+  }
+
+  .photo-cell:nth-child(7), .photo-cell:nth-child(8){
+    grid-column: span 1;
+  }
+
+  .photo-cell:nth-child(10), .photo-cell:nth-child(11){
+    grid-column: span 1;
+  }
+
+  /*body{
+    background-color: green;
+  }*/
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+
+
+/*images*/
+
+  .photo-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*or could say 1fr 1fr 1fr 1fr -- then could later change from fraction amnts*/
+  }
+
+  .photo-cell{
+    grid-column: span 1;
+  }
+
+  /*.photo-cell:nth-child(1), .photo-cell:nth-child(2), .photo-cell:nth-child(5), .photo-cell:nth-child(6), .photo-cell:nth-child(7){
+    grid-column: span 2;
+  }*/
+  .photo-cell:nth-child(3){
+    grid-column: span 2;
+  }
+
+ .photo-cell:nth-child(7){
+    grid-column: span 2;
+  }
+
+  .photo-cell:nth-child(9){
+     grid-column: span 3;
+   }
 
 }
