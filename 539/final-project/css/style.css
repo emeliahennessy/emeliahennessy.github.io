@@ -1,3 +1,49 @@
+.about-photo img {
+  max-width: 100%;
+	-moz-border-radius: 2%;
+	-webkit-border-radius: 2%;
+	border-radius: 2%;
+	padding: 1% 2%;
+	margin-bottom: .5%;
+}
+
+
+
+/*contact me page */
+
+fieldset {
+	background: #ffeef1;
+	border-color: #000080;
+	border-style: solid;
+	border-width: 3%;
+	-moz-border-radius: 2%;
+	-webkit-border-radius: 2%;
+	border-radius: 2%;
+	padding: 1% 2%;
+	margin-bottom: .5%;
+}
+
+label{
+	font-weight: normal;
+}
+
+legend {
+	font-weight: bold;
+	color: #000080;
+}
+
+textarea {
+  width: 100%;
+  height: 20vh;
+}
+
+
+
+
+
+
+
+
 .card-img-top{
 height: 225px;
 width: 100%;
@@ -11,14 +57,39 @@ display: block;
   display: block;
 }
 
-textarea {
-  width: 50%;
-  height: 20vh;
-}
 
 .photo-cell img{
   width: 100%;
 }
+
+fieldset {
+  display: block;
+  width: 100%
+}
+
+resp-img {
+  padding: 10px;
+}
+
+
+/*photo gallery*/
+.crafts{
+	display: block;
+	margin: auto;
+	max-width: 1200px;
+}
+.photo-cell{
+	margin-bottom: 2%;
+	margin-left: 2%;
+}
+.photo-cell img {
+	width: 98%;
+  	display: block;
+  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
+
+
+
 
 
 
@@ -64,6 +135,11 @@ textarea {
 
 
 
+
+
+
+
+
 @media only screen and (min-width: 1000px) {
 
 
@@ -71,7 +147,7 @@ textarea {
 
   .photo-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /*or could say 1fr 1fr 1fr 1fr -- then could later change from fraction amnts*/
+    grid-template-columns: 1fr 1fr 1fr; /*or could change from fractions to auto auto auto*/
   }
 
   .photo-cell{
@@ -81,7 +157,10 @@ textarea {
   /*.photo-cell:nth-child(1), .photo-cell:nth-child(2), .photo-cell:nth-child(5), .photo-cell:nth-child(6), .photo-cell:nth-child(7){
     grid-column: span 2;
   }*/
-  .photo-cell:nth-child(3){
+
+
+
+  /* .photo-cell:nth-child(3){
     grid-column: span 2;
   }
 
@@ -91,6 +170,6 @@ textarea {
 
   .photo-cell:nth-child(9){
      grid-column: span 3;
-   }
+   } */
 
 }
