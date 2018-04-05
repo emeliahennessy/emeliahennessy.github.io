@@ -1,3 +1,17 @@
+
+
+
+/*nav */
+.jumbotron {
+  background-color: #ffeef1;
+}
+.bg-dark {
+  background: #000080!important;
+}
+
+
+/*about page */
+
 .about-photo img {
   max-width: 100%;
 	-moz-border-radius: 2%;
@@ -6,6 +20,8 @@
 	padding: 1% 2%;
 	margin-bottom: .5%;
 }
+
+
 
 
 
@@ -34,10 +50,18 @@ legend {
 
 textarea {
   width: 100%;
-  height: 20vh;
+  height: 30vh;
 }
 
 
+
+input {
+  width: 100%;
+}
+
+.submit-btn {
+  width: 100px;
+}
 
 
 
@@ -154,6 +178,8 @@ resp-img {
     grid-column: span 1;
   }
 
+
+
   /*.photo-cell:nth-child(1), .photo-cell:nth-child(2), .photo-cell:nth-child(5), .photo-cell:nth-child(6), .photo-cell:nth-child(7){
     grid-column: span 2;
   }*/
@@ -171,5 +197,18 @@ resp-img {
   .photo-cell:nth-child(9){
      grid-column: span 3;
    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
