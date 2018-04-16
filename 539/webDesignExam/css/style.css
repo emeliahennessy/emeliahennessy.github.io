@@ -1,0 +1,17 @@
+header{
+  font-size: 60px;
+}
+body {
+   background-image: url("../images/circles-light.png");
+}
+div{
+  display: inline-block;
+  border: 5px solid blue;
+  padding: 5%;
+  width; 40%;
+  margin: 0 0 0 0;
+}
+img{
+
+
+}

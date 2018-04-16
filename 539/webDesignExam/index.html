@@ -3,17 +3,34 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title></title>
-  </head>
-  <header>Emelia Hennessy</header>
-  <body>
+    <title>emelia's exam</title>
 
-    <div>
+    <script type="text/javascript">
+
+    function show(){
+      var img = document.getElementById('image1');
+      img.style.visibility = 'visible';
+
+      }
+    function hide(div){
+    document.getElementById("image1").innerHTML = null;
+      }
+
+    </script>
+
+  </head>
+  <body>
+  <header>Emelia Hennessy</header>
+
+    <div id= "image1">
       <img src="images/examPic.JPG" alt="examPic">
     </div>
-    <div>
+    <div id="image2">
       <img src="images/UMSI-logo.jpg" alt="UMSI-logo">
     </div>
+
+    <button onclick="hide(this)"type="button">Hide Image</button>
+    <button onclick="show(this)" type="button">Show Image</button>
 
   </body>
 </html>
